@@ -1,0 +1,13 @@
+﻿1.Check if pushing the snowball toward the wall, since the snow ball cannot be pulled, it will be allowed to move toward the wall if the destination is beside the wall on the same line with the snowball otherwise it will be stuck.
+
+
+2.Consider corner of the wall and corner made by 2 obstacles, never allow snowball to go toward that position otherwise it will be stuck.
+
+
+3.When moving a complete snowman  onto the destination or moving a medium snowball onto the big snowball onto the destination or moving a big snowball onto the destination,lower Manhattan distance since it matches with our goal. If moving other snowballs onto the destination, it will cost more to remove it, so make the manhattan distance higher.
+
+
+4.Double or triple Manhattan distance if multiple snowballs are stuck together.
+
+
+5.Avoid too many loops, because it will extend the run time.
